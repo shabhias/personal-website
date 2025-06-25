@@ -65,7 +65,7 @@ export default function Home() {
           {/* Gambar besar */}
           <div className="relative h-screen w-full overflow-hidden">
             <Image
-              src="/photo_1.jpg"
+              src="/photo_1.JPG"
               alt="Black and white"
               fill
               className="object-cover grayscale"

@@ -38,15 +38,6 @@ export default function AboutPage() {
             a skilled Data Scientist.
           </p>
           <p>
-            During my time at university, I joined a student organization as
-            part of the creative team. It was a space where I could express
-            ideas visually and conceptually — from designing content to
-            brainstorming for campaigns. What I enjoyed the most was the open
-            exchange of ideas and collaboration with passionate peers. It really
-            shaped my ability to think creatively and work as part of a dynamic
-            team.
-          </p>
-          <p>
             I aspire to pursue a career as a data scientist contributing to
             impactful solutions through data-driven technology. Additionally, I
             aim to build digital tools or platforms that make data more

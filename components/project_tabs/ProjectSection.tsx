@@ -4,13 +4,6 @@ import { ToggleButton, ToggleButtonGroup } from "@mui/material";
 import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 
-// const projects = [
-//   { id: 1, category: "Data Science", title: "Sentiment Classifier" },
-//   { id: 2, category: "Software Project", title: "Credit Risk App" },
-//   { id: 3, category: "Data Science", title: "Clustering Visualizer" },
-//   { id: 4, category: "Software Project", title: "Quiz Platform" },
-// ];
-
 const projects = [
   {
     id: 1,
@@ -18,9 +11,9 @@ const projects = [
     title: "Avento Origin",
     description:
       "Front End Developer and UI/UX Designer of Avento Origin, a web application for managing documents with QR Codes.",
-    imageUrl: "/web_avento.png",
+    imageUrl: "/photo_project/web_avento.png",
     websiteUrl: "https://avento-origin.vercel.app/",
-    readMoreUrl: "Avento Origin.pdf",
+    readMoreUrl: "/pdf/Avento Origin.pdf",
   },
   {
     id: 2,
@@ -28,25 +21,39 @@ const projects = [
     title: "Personal Website",
     description:
       "My personal website project. A website. You're looking at it. Mission accomplished?",
-    imageUrl: "/web_personal.png",
+    imageUrl: "/photo_project/web_personal.png",
     websiteUrl: "/",
+    githubUrl: "https://github.com/shabhias/personal-website",
   },
   {
     id: 3,
     category: "Data Science",
-    title: "Insurance Customer Churn Prediction",
-    description: "An Insurance Customer Churn Prediction.",
-    imageUrl: "/data_apap.png",
-    readMoreUrl: "/Tim Projek APAP.pdf",
+    title: "Insurance Customer Churn Prediction ",
+    description:
+      "Insurance Customer Churn Prediction by analyzing their Customer Lifetime Value (CLV), policy types, and claim behavior",
+    imageUrl: "/photo_project/data_apap.png",
+    readMoreUrl: "/pdf/Tim Projek APAP.pdf",
+    githubUrl: "https://github.com/shabhias/APAP_Project",
   },
   {
     id: 4,
     category: "Data Science",
-    title: "Sentiment Classifier",
+    title: "Case Study 1",
     description:
-      "case study focuses on analyzing user behavior for Cyclistic, a fictional bike-share company based in Chicago",
-    imageUrl: "/data_course.png",
-    readMoreUrl: "https://github.com/shabhias",
+      "Case study focuses on analyzing user behavior for Cyclistic, a fictional bike-share company based in Chicago",
+    imageUrl: "/photo_project/data_course.png",
+    readMoreUrl: "/pdf/Presentation_CaseStudy1.pdf",
+    githubUrl: "https://github.com/shabhias/Case_Study-Bike_Share",
+  },
+  {
+    id: 5,
+    category: "Data Science",
+    title: "Laboratory Analysis",
+    description:
+      "This laboratory project focuses on the practical implementation of core concepts in Artificial Intelligence and Basic Data Science.",
+    imageUrl: "/photo_project/lab_github.png",
+    githubUrl:
+      "https://github.com/shabhias?tab=repositories&q=&type=&language=jupyter+notebook&sort=",
   },
 ];
 
@@ -129,6 +136,7 @@ export default function ProjectSection() {
               imageUrl={project.imageUrl}
               websiteUrl={project.websiteUrl}
               readMoreUrl={project.readMoreUrl}
+              githubUrl={project.githubUrl}
             />
           </motion.div>
         ))}

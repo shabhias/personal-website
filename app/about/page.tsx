@@ -11,7 +11,7 @@ export default function AboutPage() {
       >
         <div className="w-full h-[80px] relative mb-10  mt-10">
           <Image
-            src="/self_line2.png"
+            src="/photo_me/self_line2.png"
             alt="strip"
             fill
             className="object-cover grayscale"
@@ -56,8 +56,8 @@ export default function AboutPage() {
         {/* Tambahan link di bawahnya */}
         <p className=" text-[#131122] text-[16px] bg-[#FBFBFB] px-6 py-9  ">
           <a
-            href="contact"
-            target=""
+            href="/pdf/CV_Shabhi Aliyya SD.pdf"
+            target="_blank"
             rel="noopener noreferrer"
             className="underline text-black hover:text-blue-800"
           >

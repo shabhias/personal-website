@@ -4,6 +4,7 @@ import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 
 import { Playfair_Display } from "next/font/google";
 import PageTransition from "@/components/PageTransition";
+import { SiKaggle } from "react-icons/si";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -64,12 +65,12 @@ export default function ContactPage() {
               <FaGithub />
             </a>
             <a
-              href="https://github.com/sabiasa"
+              href="https://www.kaggle.com/shabhidzakia"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-400"
             >
-              <FaGithub />
+              <SiKaggle className="text-4xl" />
             </a>
           </div>
         </div>

@@ -22,7 +22,7 @@ export default function Home() {
               </span>
             </p>
             <Image
-              src="/self_image3.jpg"
+              src="/photo_me/self_image3.jpg"
               alt="Shabhi on steps"
               width={500}
               height={500}
@@ -34,19 +34,19 @@ export default function Home() {
           <div className={`${playfair.className} text-right space-y-7 pt-36`}>
             <a
               href="about"
-              className="block text-8xl font-bold text-black hover:text-[#7B7272]  transition-colors"
+              className="block text-6xl md:text-6xl lg:text-8xl font-bold text-black hover:text-[#7B7272]  transition-colors"
             >
               ABOUT
             </a>
             <a
               href="project"
-              className="block text-8xl font-semibold text-gray-700 hover:text-black transition-colors"
+              className="block text-6xl md:text-7xl lg:text-8xl font-semibold text-gray-700 hover:text-black transition-colors"
             >
               PROJECT
             </a>
             <a
               href="contact"
-              className="block text-8xl font-medium  text-[#7B7272] hover:text-gray-700 transition-colors"
+              className="block text-6xl md:text-7xl lg:text-8xl font-medium  text-[#7B7272] hover:text-gray-700 transition-colors"
             >
               CONTACT
             </a>
@@ -65,7 +65,7 @@ export default function Home() {
           {/* Gambar besar */}
           <div className="relative h-screen w-full overflow-hidden">
             <Image
-              src="/photo_1.JPG"
+              src="/photo_me/photo_1.JPG"
               alt="Black and white"
               fill
               className="object-cover grayscale"

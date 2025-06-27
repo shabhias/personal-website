@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { FaGithub } from "react-icons/fa";
 
 interface ProjectCardProps {
   title: string;
@@ -8,6 +9,7 @@ interface ProjectCardProps {
   imageUrl: string;
   websiteUrl?: string;
   readMoreUrl?: string;
+  githubUrl?: string;
 }
 
 export default function ProjectCard({
@@ -16,6 +18,7 @@ export default function ProjectCard({
   imageUrl,
   websiteUrl,
   readMoreUrl,
+  githubUrl,
 }: ProjectCardProps) {
   return (
     <div className="w-[360px]  bg-white text-black  overflow-hidden shadow-md border-[5px] border-[#fff]">
@@ -26,23 +29,35 @@ export default function ProjectCard({
       <div className="p-4 text-sm space-y-4">
         <p className="text-gray-800">{description}</p>
 
-        <div className="flex gap-2 justify-start ">
-          {websiteUrl && (
+        <div className="flex justify-between items-center">
+          <div className="flex gap-2">
+            {websiteUrl && (
+              <Link
+                href={websiteUrl}
+                target="_blank"
+                className="bg-[#111132] text-white text-xs px-4 py-3 hover:bg-black"
+              >
+                website
+              </Link>
+            )}
+            {readMoreUrl && (
+              <Link
+                href={readMoreUrl}
+                target="_blank"
+                className="bg-[#111132] text-white text-xs px-4 py-3 hover:bg-black"
+              >
+                read more
+              </Link>
+            )}
+          </div>
+
+          {githubUrl && (
             <Link
-              href={websiteUrl}
+              href={githubUrl}
               target="_blank"
-              className="bg-[#111132] text-white text-xs px-4 py-3 hover:bg-black"
+              className="text-gray-700 hover:text-black text-xl"
             >
-              website
-            </Link>
-          )}
-          {readMoreUrl && (
-            <Link
-              href={readMoreUrl}
-              target="_blank"
-              className="bg-[#111132] text-white text-xs px-4 py-3  hover:bg-black"
-            >
-              read more
+              <FaGithub className="w-10 h-10 text-black hover:text-gray-700" />
             </Link>
           )}
         </div>

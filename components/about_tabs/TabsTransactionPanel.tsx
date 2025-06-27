@@ -54,7 +54,7 @@ export function TabsTransitionPanel() {
         <>
           Completed{" "}
           <a
-            href="https://www.coursera.org/professional-certificates/google-data-analytics"
+            href="/pdf/Data Analytics Certificate.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="underline text-blue-600 hover:text-blue-800"

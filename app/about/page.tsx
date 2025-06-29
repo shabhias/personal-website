@@ -18,7 +18,7 @@ export default function AboutPage() {
           />
         </div>
         {/* Judul */}
-        <h2 className="text-3xl text-gray-800 font-light">Hello, its</h2>
+        <h2 className="text-3xl text-gray-800 font-light">Hello, it&apos;s</h2>
         <h1 className="text-5xl text-black font-extrabold mt-2 mb-6 font-serif">
           Shabhi Aliyya Siyauqi Dzakia
         </h1>
